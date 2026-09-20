@@ -31,7 +31,7 @@
         </div>
 
         <!-- Sparkline 折线图 -->
-        <div v-if="logs.length > 1 && sparkline" class="px-8 py-4 border-b border-white/5 sparkline-container bg-slate-900/20">
+        <div v-if="logs.length > 1 && sparkline && sparkline.path" class="px-8 py-4 border-b border-white/5 sparkline-container bg-slate-900/20">
           <div class="flex items-center justify-between mb-2">
             <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">响应延迟趋势</span>
             <span class="text-xs text-slate-500 font-mono">Max: {{ sparkline.maxL }}ms</span>
